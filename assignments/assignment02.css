@@ -1,20 +1,42 @@
-/* --- put your css here --- */ 
+/* =~=~=~=~=~=~=~=~=~=~=~=~= Part A =~=~=~=~=~=~=~=~=~=~=~=~= */
+/* Numbers 2-4 */
 
+/* 2. Change the color to sky blue */
 body{
    background-color: skyblue;
 }
   
+/* 3. Change the font for igottabeme element */
 #igottabeme{
    font-family: "Arial", "Helvetica", "sans-serif";
 }
 
+/* 4. Change the left margin for elements whose attribute includes classy */
 .classy {
   margin-left: 10px;
 }
 
+
+/* =~=~=~=~=~=~=~=~=~=~=~=~= Part B =~=~=~=~=~=~=~=~=~=~=~=~= */
+/* Numbers 5-7 */
+
+/* 5. Give DIV elements a bottom margin of 50px */
 div {
   margin-bottom: 50px;
 }
+
+/* 6. SPAN elements: Width: 100px, height: 50px, padding: (top and btm: 5) and (left and right: 20px),
+Solid Blue 5px border, and a yellow background */
+SPAN {
+   width: 100px;
+   height: 50;
+   padding: 5px 20px 5px; /* Three values sets this properly, could also be done with 4 */
+   border-style: solid;
+   border-color: blue;
+   background-color: yellow;
+}
+
+
 
 /* external css is imported into html using the <link> tag in the <head> section, as shown below.
 
