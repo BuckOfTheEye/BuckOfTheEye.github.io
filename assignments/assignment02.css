@@ -48,7 +48,7 @@ SPAN.b {
 }
 
 SPAN.c {
-   word-wrap: break-word;
+   overflow-wrap: normal;
 }
 
 
