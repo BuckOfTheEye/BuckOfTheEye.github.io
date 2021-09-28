@@ -36,7 +36,7 @@ span {
    background-color: yellow;
 }
 
-/* 7. (before 6) Set class a to word wrap normally and height property should not work!
+/* 7. Set class a to word wrap normally and height property should not work!
       Class b should appear stacked on top of each other
       Class c the Spans should word wrap, but the height property should work. */
 span.a {
@@ -58,8 +58,21 @@ span.c {
    Dog must be 50 px to the left and 150 px above where it would have been initialy
    bird must appear in orange DIV. In front of text, 50 pixels below the top and 250 to the right of the left edge. */
 img[alt=”cat icon”] {
+   position: fixed;
+   z-index: 100; 
+}
+
+img[alt=”dog icon”] {
+    position: relative;
+    left: 50px;
+    top: 150px;
    
 }
+
+img[alt=”dog icon”] {
+   
+}
+
 
 
    
