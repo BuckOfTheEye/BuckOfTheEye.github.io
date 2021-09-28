@@ -44,20 +44,25 @@ SPAN.a {
 }
 
 SPAN.b {
-   display: block;
-}
-
-SPAN.c {
    display: inline-block;
 }
 
+SPAN.c {
+   display: block;
+}
+
+/* =~=~=~=~=~=~=~=~=~=~=~=~= Part C =~=~=~=~=~=~=~=~=~=~=~=~= */
+
+/* 8. Position Icons
+   Cat icon should appear in front of elements and always be in the botton right corner.
+   Dog must be 50 px to the left and 150 px above where it would have been initialy
+   bird must appear in orange DIV. In front of text, 50 pixels below the top and 250 to the right of the left edge. */
+img[alt=”cat icon”] {
+   
+}
 
 
-
-
-
-
-
+   
 /* external css is imported into html using the <link> tag in the <head> section, as shown below.
 
   <head>
