@@ -39,13 +39,18 @@ SPAN {
 /* 7. Set class a to word wrap normally and height property should not work!
       Class b should appear stacked on top of each other
       Class c the Spans should word wrap, but the height property should work. */
-.a {
-   word-wrap: default;
+SPAN.a {
+   word-wrap: break-word;
 }
 
-.b {
+SPAN.b {
+   display: block;
+}
+
+SPAN.c {
    
 }
+
 
 
 
