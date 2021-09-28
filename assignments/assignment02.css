@@ -36,6 +36,21 @@ SPAN {
    background-color: yellow;
 }
 
+/* 7. Set class a to word wrap normally and height property should not work!
+      Class b should appear stacked on top of each other
+      Class c the Spans should word wrap, but the height property should work. */
+SPAN.a {
+   word-wrap: normal;
+}
+
+SPAN.b {
+   
+}
+
+
+
+
+
 
 
 /* external css is imported into html using the <link> tag in the <head> section, as shown below.
