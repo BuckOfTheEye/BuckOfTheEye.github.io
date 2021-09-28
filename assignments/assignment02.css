@@ -57,7 +57,7 @@ span.c {
    Cat icon should appear in front of elements and always be in the botton right corner.
    Dog must be 50 px to the left and 150 px above where it would have been initialy
    bird must appear in orange DIV. In front of text, 50 pixels below the top and 250 to the right of the left edge. */
- a[alt=”cat icon”]{
+ img[href^= "https://upload.wikimedia.org/wikipedia/commons/thu…al-cat.svg/128px-Creative-Tail-Animal-cat.svg.png"] {
    position: fixed;
    z-index: 100; 
 }
