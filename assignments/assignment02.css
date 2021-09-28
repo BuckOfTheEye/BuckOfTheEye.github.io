@@ -48,7 +48,7 @@ SPAN.b {
 }
 
 SPAN.c {
-   overflow-wrap: normal;
+   display: inline-block;
 }
 
 
