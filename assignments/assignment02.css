@@ -94,21 +94,9 @@ nav{
 /* =~=~=~=~=~=~=~=~=~=~=~=~= Part D =~=~=~=~=~=~=~=~=~=~=~=~= */
 
 /*10 edit tables */
-stripey:nth-child(even) {
-  background-color: #f2f2f2;
-} 
-
-mousey:hover {
-  background-color: yellow;
+table.stripey{
 }
 
-righty{
-   text-align: right
-}
-
-pinkey:focus{
-   background-color: pink;
-}
 
 
    
