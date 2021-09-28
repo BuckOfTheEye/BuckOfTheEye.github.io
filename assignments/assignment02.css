@@ -81,6 +81,12 @@ img[alt="bird icon"] {
    bottom: 50px;
 }
 
+/* 9 Set the nav bar to stick and set background color to green 90% */
+nav{
+   position: sticky;
+   background-color: green; opacity:0.9;
+   
+}
 
 
    
