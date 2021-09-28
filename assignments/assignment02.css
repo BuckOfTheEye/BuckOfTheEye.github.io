@@ -78,7 +78,7 @@ img[alt="bird icon"] {
    position: absolute;
    z-index: 99; 
    left: 250px;
-   bottom: 50px;
+   top: 50px;
 }
 
 
