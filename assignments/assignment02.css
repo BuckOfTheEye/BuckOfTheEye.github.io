@@ -70,6 +70,10 @@ img[alt="dog icon"] {
     bottom: 150px; 
 }
 
+#positionMe {
+   position: relative;
+}
+
 img[alt="bird icon"] {
    position: absolute;
    z-index: 99; 
