@@ -40,7 +40,7 @@ SPAN {
       Class b should appear stacked on top of each other
       Class c the Spans should word wrap, but the height property should work. */
 SPAN.a {
-   word-wrap: break-word;
+   word-wrap;
 }
 
 SPAN.b {
