@@ -62,7 +62,7 @@ span.c {
    z-index: 100; 
 }
 
-img [alt=”dog icon”] {
+img [href^="https://upload.wikimedia.org/wikipedia/commons/thu…al-cat.svg/128px-Creative-Tail-Animal-cat.svg.png"] {
     position: relative;
     left: 50px;
     top: 150px;
