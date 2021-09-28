@@ -25,18 +25,7 @@ div {
   margin-bottom: 50px;
 }
 
-/* 6. SPAN elements: Width: 100px, height: 50px, padding: (top and btm: 5) and (left and right: 20px),
-Solid Blue 5px border, and a yellow background */
-SPAN {
-   width: 100px;
-   height: 50px;
-   padding: 5px 20px 5px; /* Three values sets this properly, could also be done with 4 */
-   border-style: solid;
-   border-color: blue;
-   background-color: yellow;
-}
-
-/* 7. Set class a to word wrap normally and height property should not work!
+/* 7. (before 6) Set class a to word wrap normally and height property should not work!
       Class b should appear stacked on top of each other
       Class c the Spans should word wrap, but the height property should work. */
 SPAN.a {
@@ -50,6 +39,19 @@ SPAN.b {
 SPAN.c {
    display: block;
 }
+
+/* 6. SPAN elements: Width: 100px, height: 50px, padding: (top and btm: 5) and (left and right: 20px),
+Solid Blue 5px border, and a yellow background */
+SPAN {
+   width: 100px;
+   height: 50px;
+   padding: 5px 20px 5px; /* Three values sets this properly, could also be done with 4 */
+   border-style: solid;
+   border-color: blue;
+   background-color: yellow;
+}
+
+
 
 /* =~=~=~=~=~=~=~=~=~=~=~=~= Part C =~=~=~=~=~=~=~=~=~=~=~=~= */
 
