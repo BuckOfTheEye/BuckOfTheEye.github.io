@@ -29,7 +29,7 @@ div {
 Solid Blue 5px border, and a yellow background */
 SPAN {
    width: 100px;
-   height: 500px;
+   height: 50px;
    padding: 5px 20px 5px; /* Three values sets this properly, could also be done with 4 */
    border-style: solid;
    border-color: blue;
