@@ -86,7 +86,28 @@ nav{
    position: sticky;
    background-color: green; opacity:0.9;
    top: 0;
+   padding: 5px;
+   font-size: 20px;
    
+}
+
+/* =~=~=~=~=~=~=~=~=~=~=~=~= Part D =~=~=~=~=~=~=~=~=~=~=~=~= */
+
+/*10 edit tables */
+stripey:nth-child(even) {
+  background-color: #f2f2f2;
+} 
+
+mousey:hover {
+  background-color: yellow;
+}
+
+righty{
+   text-align: right
+}
+
+pinkey:focus{
+   background-color: pink;
 }
 
 
