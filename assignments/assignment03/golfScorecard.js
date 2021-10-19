@@ -81,6 +81,7 @@ function remove1 (elem) {
 
 //create a clear function
 function clear (elem) {
+
   elem.children[2].innerHTML = "-";
   elem.children[3].innerHTML = "-";
 }
