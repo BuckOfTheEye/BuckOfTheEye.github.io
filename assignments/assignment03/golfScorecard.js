@@ -28,6 +28,7 @@ function add1 (elem) {
     elem.children[2].innerHTML = currentScore + 1;
     elem.children[3].innerHTML = currentScore - 3;
   }
+}
 
 function remove1 (elem) {
   if(elem.children[2].innerHTML == "-") 
