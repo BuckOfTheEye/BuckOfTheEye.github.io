@@ -19,9 +19,12 @@ for(let i=1; i<=18; i++) {
   elem[i].children[4].children[1].onclick = function(){remove1(elem[i]);};
 }
 
-function totals () {
-  elem[18].children[2] = totalScore;
-  elem[18].chidren[3] = totalOver;
+elem[18] = document.getElementById(i.toString());
+elem[i].children[2] = function(){totals(elem[18]);};
+
+function totals (elem) {
+  elem.children[2] = totalScore;
+  elem.chidren[3] = totalOver;
 }
 
 // create an "add1" function
