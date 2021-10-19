@@ -39,8 +39,8 @@ function add1 (elem) {
     totalOver += 1;
     
     totals = document.getElementById(totals.toString());
-    totals.children[2} = totalScore;
-    totals.children[3} = totalOver;
+    totals.children[2] = totalScore;
+    totals.children[3] = totalOver;
     
   }
 }
