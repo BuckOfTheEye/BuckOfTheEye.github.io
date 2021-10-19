@@ -17,28 +17,31 @@ for(let i=1; i<=18; i++) {
   elem[i] = document.getElementById(i.toString());
   elem[i].children[4].children[0].onclick = function(){add1(elem[i]);};
   elem[i].children[4].children[1].onclick = function(){remove1(elem[i]);};
+  totals();
+}
+
+function totals () {
+  elem[18] = document.getElementById(18.toString());
   elem[18].children[2] = totalScore;
   elem[18].chidren[3] = totalOver;
 }
 
-
 // create an "add1" function
 function add1 (elem) {
-  
   if(elem.children[2].innerHTML == "-") 
     elem.children[2].innerHTML = "1";
+    elem.children[3].innerHTML = "-3";
   
   else {
     let currentScore = elem.children[2].innerHTML;
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
     
-    let overScore = -4 + currentScore;
+    let overScore = -3 + currentScore;
     elem.children[3].innerHTML = overScore;
     
     totalScore += 1;
     totalOver += 1;
-    
   }
 }
 
@@ -51,11 +54,13 @@ function remove1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
     
-    let overScore = -4 + currentScore;
+    let overScore = -3 + currentScore;
     elem.children[3].innerHTML = overScore;
     
     totalScore = totalScore - 1;
     totalOver = overScore - 1;
+    elem[18].children[2] = totalScore;
+    elem[18].chidren[3] = totalOver;
 
   }
 }
