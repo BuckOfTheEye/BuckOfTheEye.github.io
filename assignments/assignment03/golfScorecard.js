@@ -29,9 +29,16 @@ for(let i=1; i<=18; i++) {
 
 // create an "add1" function
 function add1 (elem) {
-  if(elem.children[2].innerHTML == "-") 
+  if(elem.children[2].innerHTML == "-") {
     elem.children[2].innerHTML = "1";
-
+    totalScore += 1;
+    totalOver += 1;
+    
+    totals = document.getElementById('totals');
+    totals.children[2].innerHTML = totalScore;
+    totals.children[3].innerHTML = totalOver;
+    
+  }
   else {
     let currentScore = elem.children[2].innerHTML;
     currentScore = Number.parseInt(currentScore);
@@ -44,7 +51,8 @@ function add1 (elem) {
     totalOver += 1;
     
     totals = document.getElementById('totals');
-    totals.children[2].innerHTML = 1;
+    totals.children[2].innerHTML = totalScore;
+    totals.children[3].innerHTML = totalOver;
     
   }
 }
@@ -64,6 +72,10 @@ function remove1 (elem) {
     
     totalScore = totalScore - 1;
     totalOver = totalOver - 1;
+    
+    totals = document.getElementById('totals');
+    totals.children[2].innerHTML = totalScore;
+    totals.children[3].innerHTML = totalOver;
   }
 }
 
