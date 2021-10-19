@@ -1,4 +1,6 @@
 let elem = [];
+let totalScore = 0;
+let totalOver = 0;
 // assign the entire table row for hole 1 to a variable, elem
 // elem[1] = document.getElementById("1");
 
@@ -20,8 +22,10 @@ for(let i=1; i<=18; i++) {
 
 // create an "add1" function
 function add1 (elem) {
+  
   if(elem.children[2].innerHTML == "-") 
     elem.children[2].innerHTML = "1";
+  
   else {
     let currentScore = elem.children[2].innerHTML;
     currentScore = Number.parseInt(currentScore);
@@ -30,11 +34,18 @@ function add1 (elem) {
     let overScore = -4 + currentScore;
     overScore = overScore + 1;
     elem.children[3].innerHTML = overScore;
+    
+    totalScore += 1;
+    elem[18].chidren[2] = totalScore;
+    totalOver += overScore;
+     elem[18].chidren[3] = totalOver;
+    
   }
 }
 
 function remove1 (elem) {
-  if(elem.children[2].innerHTML == "-") 
+  
+  if (elem.children[2].innerHTML == "-") 
     elem.children[3].innerHTML == "-";
   else {
     let currentScore = elem.children[2].innerHTML;
@@ -42,7 +53,13 @@ function remove1 (elem) {
     elem.children[2].innerHTML = currentScore - 1;
     
     let overScore = -4 + currentScore;
-    overScore = overScore + 1;
+    overScore = overScore - 1;
     elem.children[3].innerHTML = overScore;
+    
+    totalScore = totalScore - 1;
+    elem[18].chidren[2] = totalScore;
+    totalOver += overScore;
+    elem[18].chidren[3] = totalOver;
   }
 }
+
