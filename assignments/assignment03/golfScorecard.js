@@ -26,7 +26,7 @@ function add1 (elem) {
     let currentScore = elem.children[2].innerHTML;
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
-    elem.children[3].innerHTML = -4 + currentScore;
+    elem.children[3].innerHTML = -3 + currentScore;
   }
 }
 
@@ -37,6 +37,6 @@ function remove1 (elem) {
     let currentScore = elem.children[2].innerHTML;
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
-    elem.children[3].innerHTML = -4 + currentScore;
+    elem.children[3].innerHTML = -3 + currentScore;
   }
 }
