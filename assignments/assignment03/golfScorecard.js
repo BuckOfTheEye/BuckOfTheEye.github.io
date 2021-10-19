@@ -17,6 +17,7 @@ for(let i=1; i<=18; i++) {
   elem[i] = document.getElementById(i.toString());
   elem[i].children[4].children[0].onclick = function(){add1(elem[i]);};
   elem[i].children[4].children[1].onclick = function(){remove1(elem[i]);};
+  elem[i].children[4].children[2].onclick = function(){clear(elem[i]);}
 }
 
 elem[18] = document.getElementById(i.toString());
@@ -49,7 +50,7 @@ function add1 (elem) {
 function remove1 (elem) {
   
   if (elem.children[2].innerHTML == "-") 
-    elem.children[3].innerHTML == "-";
+    elem.children[2].innerHTML == "-";
   else {
     let currentScore = elem.children[2].innerHTML;
     currentScore = Number.parseInt(currentScore);
@@ -60,7 +61,10 @@ function remove1 (elem) {
     
     totalScore = totalScore - 1;
     totalOver = overScore - 1;
-
   }
 }
 
+function clear (elem) {
+  elem.children[2].innerHTML = "-";
+  elem.children[3].innerHTML = "-";
+}
