@@ -20,7 +20,7 @@ for(let i=1; i<=18; i++) {
   elem[i].children[4].children[2].onclick = function(){clear(elem[i]);}
 }
 
-elem[18] = document.getElementById(i.toString());
+elem[18] = document.getElementById(18.toString());
 elem[i].children[2] = function(){totals(elem[18]);};
 
 function totals (elem) {
