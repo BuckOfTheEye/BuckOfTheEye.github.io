@@ -37,7 +37,7 @@ function add1 (elem) {
     elem.children[3].innerHTML = overScore;
     
     totalScore += 1;
-    totalOver += overScore;
+    totalOver += 1;
     
   }
 }
@@ -55,7 +55,7 @@ function remove1 (elem) {
     elem.children[3].innerHTML = overScore;
     
     totalScore = totalScore - 1;
-    totalOver += overScore;
+    totalOver = overScore - 1;
 
   }
 }
