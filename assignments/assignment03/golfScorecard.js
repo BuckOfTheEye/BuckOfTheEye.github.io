@@ -43,8 +43,8 @@ function add1 (elem) {
     totalScore += 1;
     totalOver += 1;
     
-    var totals = document.getElementByID('totals');
-    totals.children[2] = totalScore;
+    totals = document.getElementById('totals');
+    totals.children[2] = 1;
     
   }
 }
