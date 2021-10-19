@@ -14,7 +14,7 @@ for(let i=1; i<=18; i++) {
   // console.log(i);
   elem[i] = document.getElementById(i.toString());
   elem[i].children[4].children[0].onclick = function(){add1(elem[i]);};
-  elem[i].children[4].children[0].onclick = function(){remove1(elem[i]);};
+  elem[i].children[4].children[1].onclick = function(){remove1(elem[i]);};
 }
 
 
@@ -32,7 +32,7 @@ function add1 (elem) {
 
 function remove1 (elem) {
   if(elem.children[2].innerHTML == "-") 
-    elem.children[2].innerHTML = "1";
+    elem.children[3].innerHTML = currentScore - 3;
   else {
     let currentScore = elem.children[2].innerHTML;
     currentScore = Number.parseInt(currentScore);
