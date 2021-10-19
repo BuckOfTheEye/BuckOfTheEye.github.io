@@ -26,17 +26,17 @@ function add1 (elem) {
     let currentScore = elem.children[2].innerHTML;
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
-    elem.children[3].innerHTML = currentScore - 3;
+    elem.children[3].innerHTML = -4 + currentScore;
   }
 }
 
 function remove1 (elem) {
   if(elem.children[2].innerHTML == "-") 
-    elem.children[3].innerHTML = currentScore - 3;
+
   else {
     let currentScore = elem.children[2].innerHTML;
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
-     elem.children[3].innerHTML = currentScore - 3;
+    elem.children[3].innerHTML = -4 + currentScore;
   }
 }
