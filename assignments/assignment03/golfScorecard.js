@@ -17,7 +17,7 @@ for(let i=1; i<=18; i++) {
   elem[i] = document.getElementById(i.toString());
   elem[i].children[4].children[0].onclick = function(){add1(elem[i]);};
   elem[i].children[4].children[1].onclick = function(){remove1(elem[i]);};
-  elem[18].chidren[2] = totalScore;
+  elem[18].children[2] = totalScore;
   elem[18].chidren[3] = totalOver;
 }
 
