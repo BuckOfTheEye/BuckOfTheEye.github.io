@@ -1,3 +1,8 @@
+//---------------------------------------------------------
+//Author: Austin Barbee
+//Contact: ambarbee@svsu.edu
+//Description: JS code for keeping track of golf scores
+//---------------------------------------------------------
 
 //declare variables
 let elem = [];
@@ -38,7 +43,7 @@ function add1 (elem) {
     totalScore += 1;
     totalOver += 1;
     
-    totals = document.getElementById(totals.toString());
+    let totals = document.getElementById("totals");
     totals.children[2] = totalScore;
     totals.children[3] = totalOver;
     
