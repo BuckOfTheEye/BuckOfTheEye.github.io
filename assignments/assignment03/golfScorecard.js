@@ -31,14 +31,7 @@ for(let i=1; i<=18; i++) {
 function add1 (elem) {
   if(elem.children[2].innerHTML == "-") {
     elem.children[2].innerHTML = "1";
-    totalScore += 1;
-    totalOver += 1;
-    
-    totals = document.getElementById('totals');
-    totals.children[2].innerHTML = totalScore;
-    totals.children[3].innerHTML = totalOver;
-    
-  }
+
   else {
     let currentScore = elem.children[2].innerHTML;
     currentScore = Number.parseInt(currentScore);
@@ -47,6 +40,9 @@ function add1 (elem) {
     let overScore = -3 + currentScore;
     elem.children[3].innerHTML = overScore;
     
+    if (overScore < 2){
+      totalOver += -4
+    }
     totalScore += 1;
     totalOver += 1;
     
