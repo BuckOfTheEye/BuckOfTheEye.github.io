@@ -20,7 +20,6 @@ for(let i=1; i<=18; i++) {
 }
 
 function totals () {
-  elem[18] = document.getElementById(18.toString());
   elem[18].children[2] = totalScore;
   elem[18].chidren[3] = totalOver;
 }
