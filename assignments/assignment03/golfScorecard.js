@@ -44,7 +44,7 @@ function add1 (elem) {
     totalOver += 1;
     
     totals = document.getElementById('totals');
-    totals.children[2] = 1;
+    totals.children[2].innerHTML = 1;
     
   }
 }
