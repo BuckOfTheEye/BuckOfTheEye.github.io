@@ -28,8 +28,7 @@ function totals () {
 function add1 (elem) {
   if(elem.children[2].innerHTML == "-") 
     elem.children[2].innerHTML = "1";
-    elem.children[3].innerHTML = "-3";
-  
+
   else {
     let currentScore = elem.children[2].innerHTML;
     currentScore = Number.parseInt(currentScore);
