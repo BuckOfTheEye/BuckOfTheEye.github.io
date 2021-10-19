@@ -59,8 +59,6 @@ function remove1 (elem) {
     
     totalScore = totalScore - 1;
     totalOver = overScore - 1;
-    elem[18].children[2] = totalScore;
-    elem[18].chidren[3] = totalOver;
 
   }
 }
