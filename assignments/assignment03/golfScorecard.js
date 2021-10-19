@@ -43,9 +43,11 @@ function add1 (elem) {
     totalScore += 1;
     totalOver += 1;
     
-    let totals = document.getElementById("totals");
-    totals.children[2] = totalScore;
-    totals.children[3] = totalOver;
+    let scoreTotals = document.getElementById("scoreTotal");
+    scoreTotals.children[2] = totalScore;
+    
+    let overTotals = document.getElementById("overTotal");
+    overTotals.children[3] = totalOver;
     
   }
 }
