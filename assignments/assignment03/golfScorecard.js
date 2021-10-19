@@ -32,7 +32,7 @@ function add1 (elem) {
 
 function remove1 (elem) {
   if(elem.children[2].innerHTML == "-") 
-
+    (elem.children[3].innerHTML == "-"
   else {
     let currentScore = elem.children[2].innerHTML;
     currentScore = Number.parseInt(currentScore);
