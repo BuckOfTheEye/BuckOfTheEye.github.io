@@ -22,13 +22,6 @@ for(let i=1; i<=18; i++) {
   elem[i].children[4].children[2].onclick = function(){clear(elem[i]);}
 }
 
-//updates totals at the bottom of the page
-function totals (){
-  totals = document.getElementById(allTotal.toString());
-  totals.children[2] = totalScore;
-  totals.children[3] = totalOver;
-}
-
 // create an "add1" function
 function add1 (elem) {
   if(elem.children[2].innerHTML == "-") 
@@ -44,8 +37,11 @@ function add1 (elem) {
     
     totalScore += 1;
     totalOver += 1;
-    totals();
-
+    
+    totals = document.getElementById(totals.toString());
+    totals.children[2} = totalScore;
+    totals.children[3} = totalOver;
+    
   }
 }
 
