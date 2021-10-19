@@ -1,3 +1,5 @@
+
+//declare variables
 let elem = [];
 let totalScore = 0;
 let totalOver = 0;
@@ -20,12 +22,11 @@ for(let i=1; i<=18; i++) {
   elem[i].children[4].children[2].onclick = function(){clear(elem[i]);}
 }
 
-elem[18] = document.getElementById(18.toString());
-elem[i].children[2] = function(){totals(elem[18]);};
-
-function totals (elem) {
-  elem.children[2] = totalScore;
-  elem.chidren[3] = totalOver;
+//updates totals at the bottom of the page
+function totals (){
+  totals = document.getElementById(allTotal.toString());
+  totals.children[2] = totalScore;
+  totals.children[3] = totalOver;
 }
 
 // create an "add1" function
@@ -44,9 +45,11 @@ function add1 (elem) {
     totalScore += 1;
     totalOver += 1;
     totals();
+
   }
 }
 
+//create an "remove1" function
 function remove1 (elem) {
   
   if (elem.children[2].innerHTML == "-") 
@@ -60,10 +63,11 @@ function remove1 (elem) {
     elem.children[3].innerHTML = overScore;
     
     totalScore = totalScore - 1;
-    totalOver = overScore - 1;
+    totalOver = totalOver - 1;
   }
 }
 
+//create a clear function
 function clear (elem) {
   elem.children[2].innerHTML = "-";
   elem.children[3].innerHTML = "-";
