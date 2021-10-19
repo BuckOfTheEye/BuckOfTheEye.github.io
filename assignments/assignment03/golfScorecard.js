@@ -24,9 +24,10 @@ function add1 (elem) {
     elem.children[2].innerHTML = "1";
   else {
     let currentScore = elem.children[2].innerHTML;
-    let overScore = -4 + currentScore;
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
+    
+    let overScore = -4 + currentScore;
     overScore = overScore + 1;
     elem.children[3].innerHTML = overScore;
   }
@@ -37,9 +38,10 @@ function remove1 (elem) {
     elem.children[3].innerHTML == "-";
   else {
     let currentScore = elem.children[2].innerHTML;
-    let overScore = -4 + currentScore;
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
+    
+    let overScore = -4 + currentScore;
     overScore = overScore + 1;
     elem.children[3].innerHTML = overScore;
   }
