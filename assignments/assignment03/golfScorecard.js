@@ -13,7 +13,7 @@ let elem = [];
 for(let i=1; i<=18; i++) {
   // console.log(i);
   elem[i] = document.getElementById(i.toString());
-  elem[1].children[4].children[0].onclick = function(){add1(elem[i]);};
+  elem[i].children[4].children[0].onclick = function(){add1(elem[i]);};
 }
 
 
