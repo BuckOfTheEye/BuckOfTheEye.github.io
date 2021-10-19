@@ -32,7 +32,6 @@ function add1 (elem) {
     elem.children[2].innerHTML = currentScore + 1;
     
     let overScore = -4 + currentScore;
-    overScore = overScore + 1;
     elem.children[3].innerHTML = overScore;
     
     totalScore += 1;
@@ -53,7 +52,6 @@ function remove1 (elem) {
     elem.children[2].innerHTML = currentScore - 1;
     
     let overScore = -4 + currentScore;
-    overScore = overScore - 1;
     elem.children[3].innerHTML = overScore;
     
     totalScore = totalScore - 1;
