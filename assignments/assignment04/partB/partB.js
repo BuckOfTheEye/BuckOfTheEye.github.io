@@ -7,7 +7,7 @@ let person = {
   city: "Flavor Town",
   state: "Alabama",
   zipCode: 123456,
-  fullAddress: function() {return this.streetAdress + " " + person.city + " " + person.state + " " + person.zipCode},
+  fullAddress: function() {return this.streetAddress + " " + person.city + " " + person.state + " " + person.zipCode},
   fullName: function() {return this.firstName  + " " + person.lastName}
 }
 
