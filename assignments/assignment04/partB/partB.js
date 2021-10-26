@@ -3,7 +3,7 @@ let person = {
   firstName: "Jane",
   lastName: "Doe",
   age: 45,
-  person.streetAddress = "123 Main Street";
+  streetAddress = "123 Main Street",
   city: "Flavor Town",
   state: "Alabama",
   zipCode: 123456,
@@ -18,7 +18,6 @@ document.getElementById("1B").innerHTML = person.fullAddress();
 // add properties, streetAddress, city, state, zipCode
 // add method, fullAddress(), which prints full address on a single line.
 // Display output of fullAddress() in <div id="1B">
-person.streetAddress = "123 Main Street";
 
 // ==================
 
