@@ -3,7 +3,7 @@ let person = {
   firstName: "Jane",
   lastName: "Doe",
   age: 45,
-  streetAddress = "123 Main Street",
+  streetAddress: "123 Main Street",
   city: "Flavor Town",
   state: "Alabama",
   zipCode: 123456,
