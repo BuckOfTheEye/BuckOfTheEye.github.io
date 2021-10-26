@@ -191,8 +191,8 @@ function appendTableRow5 (tableobj, col1, col2, col3, col4, col5) {
   td1.innerHTML = col1;
   td2.innerHTML = col2;
   td3.innerHTML = col3;
-  td4.innerHTML = col3;
-  td5.innerHTML = col3;
+  td4.innerHTML = col4;
+  td5.innerHTML = col5;
   // create table row DOM object
   let tr = document.createElement("tr");
   // append table divisions (columns) to table row
