@@ -7,10 +7,11 @@ let person = {
   city: "Flavor Town",
   state: "Alabama",
   zipCode: 123456,
+  fullAddress: function() {return this.streetAdress + " " + person.city + " " + person.state + " " + person.zipCode}
+  fullName: function() {return this.firstName  + " " + person.lastName}
+
 }
 
-fullAddress: function() {return this.streetAdress + " " + person.city + " " + person.state + " " + person.zipCode}
-fullName: function() {return this.firstName  + " " + person.lastName}
 
 document.getElementById("1A").innerHTML = person.fullName();
 document.getElementById("1B").innerHTML = person.fullAddress();
